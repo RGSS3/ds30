@@ -17,6 +17,8 @@ class A
 end
 
 x = A.new
+# y = A.new
+# actually at most one instance is allowed at present
 p x.eval "3+5"
 p x.eval %{require 'json'
 JSON.load '{"a": 3, "b": {"c": 5, "d": [1,2,3,4,5]}}'
